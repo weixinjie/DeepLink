@@ -15,6 +15,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 一定要在清单文件中加入下面的intent filter !!!!!!!-->
+        <activity android:name=".DeepLinkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="share"
+                    android:scheme="will" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
