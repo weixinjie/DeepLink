@@ -10,10 +10,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="will.com.github.deeplink.MainActivity">
 
-    <Button
-        android:id="@+id/bt_open_web"
+    <WebView
+        android:id="@+id/web_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="open web" />
+        android:layout_height="match_parent" />
 
 </RelativeLayout>
